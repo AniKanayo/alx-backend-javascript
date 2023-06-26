@@ -1,5 +1,5 @@
 0x00. ES6 Basics
-![Backend]https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/12/08806026ef621f900121.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230626%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230626T205531Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=9f24d1637b0c96f3fcbbfce908d6103795bc4274559a87464a69cd88b7daf5da
+![Backend](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/12/08806026ef621f900121.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230626%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230626T205531Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=9f24d1637b0c96f3fcbbfce908d6103795bc4274559a87464a69cd88b7daf5da)
 
 Resources
 Read or watch:
