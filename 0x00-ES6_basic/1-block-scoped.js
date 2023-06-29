@@ -1,10 +1,12 @@
 export default function taskBlock(trueOrFalse) {
-  var defaultTask = false;
-  var defaultTask2 = true;
+  const defaultTask = false;
+  const defaultTask2 = true;
 
   if (trueOrFalse) {
-    var task = true;
-    var task2 = false;
+    // eslint-disable-next-line no-unused-vars
+    const task = true;
+    // eslint-disable-next-line no-unused-vars
+    const task2 = false;
   }
 
   return [defaultTask, defaultTask2];
