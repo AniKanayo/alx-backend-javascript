@@ -1,5 +1,6 @@
 import { uploadPhoto, createUser } from './utils';
 
+// Remember to include export default to the function
 export default function handleProfileSignup() {
   Promise.all([uploadPhoto(), createUser()])
     .then(([photoResponse, userResponse]) => {
