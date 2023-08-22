@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const { argv } = require('process');
 
-// Function to count the number of students in a given CSV file
+// Function to count the number of students in a given CSV file.
 function countStudents(path, stream) {
   if (fs.existsSync(path)) {
     const data = fs.readFileSync(path, 'utf8');
