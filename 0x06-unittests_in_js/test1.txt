@@ -1,0 +1,42 @@
+
+> test
+> mocha *.test.js "1-calcul.test.js"
+
+
+
+  calculateNumber
+    ✔ should return the sum of rounded numbers
+
+  calculateNumber
+    type SUM
+      ✔ should return the sum of rounded numbers
+    type SUBTRACT
+      ✔ should return the difference of rounded numbers
+    type DIVIDE
+      1) should return the division of rounded numbers
+      ✔ should return "Error" when dividing by 0
+
+
+  4 passing (22ms)
+  1 failing
+
+  1) calculateNumber
+       type DIVIDE
+         should return the division of rounded numbers:
+
+      AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+[32m+ actual[39m [31m- expected[39m
+
+[32m+[39m 3.3333333333333335
+[31m-[39m 3.33
+      ^
+      + expected - actual
+
+      -3.3333333333333335
+      +3.33
+      
+      at Context.<anonymous> (1-calcul.test.js:21:14)
+      at process.processImmediate (node:internal/timers:471:21)
+
+
+
