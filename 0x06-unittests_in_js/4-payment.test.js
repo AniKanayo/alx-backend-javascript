@@ -18,14 +18,4 @@ describe('sendPaymentRequestToApi', () => {
     calculateNumberStub.restore();
     consoleSpy.restore();
   });
-
-//  it('should log the correct message', () => {
-//    const consoleSpy = sinon.spy(console, 'log');
-//
-//   sendPaymentRequestToApi(100, 20);
-//
-//    sinon.assert.calledWith(consoleSpy, 'The total is: 10');
-
-//    consoleSpy.restore();
-//  });
 });
