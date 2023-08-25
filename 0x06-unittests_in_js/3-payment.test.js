@@ -3,14 +3,19 @@ const { it, describe } = require('mocha');
 const sinon = require('sinon');
 
 const Utils = require('./utils.js');
-const sendPaymentRequestToApi = require('./3-payment.js');
+const sendPaymentRequestToApi = require('./4-payment.js');
 
-describe('', () => {
-  it('checking if numbers round with spies', () => {
-    const checkSoy = sinon.spy(Utils, 'calculateNumber');
-    sendPaymentRequestToApi(1, 3);
-    expect(checkSoy.calledOnce).to.be.true;
-    expect(checkSoy.calledWith('SUM', 1, 3)).to.be.true;
-    checkSoy.restore();
+describe('sendPaymentRequestToApi', () => {
+  it('should stub Utils.calculateNumber and log the correct message', () => {
+    const calculateNumberStub = sinon.stub(Utils, 'calculateNumber').returns(10);
+    const consoleSpy = sinon.spy(console, 'log');
+
+    sendPaymentRequestToApi(100, 20);
+
+    sinon.assert.calledWith(calculateNumberStub, 'SUM', 100, 20);
+    sinon.assert.calledWith(consoleSpy, 'The total is: 10');
+
+    calculateNumberStub.restore();
+    consoleSpy.restore();
   });
 });
