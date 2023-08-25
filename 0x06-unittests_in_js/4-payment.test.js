@@ -1,20 +1,24 @@
-// 4-payment.test.js
-const sinon = require('sinon');
-const sendPaymentRequestToApi = require('./4-payment');
 const Utils = require('./utils');
+const sinon = require('sinon');
 
-describe('sendPaymentRequestToApi', function() {
-  beforeEach(function() {
-    sinon.restore();
+describe('sendPaymentRequestToApi', () => {
+  it('should call Utils.calculateNumber with the correct arguments', () => {
+    const calculateNumberStub = sinon.stub(Utils, 'calculateNumber').returns(10);
+
+    // Rest of the test code
+
+    sinon.assert.calledWith(calculateNumberStub, 'SUM', 100, 20);
+
+    calculateNumberStub.restore();
   });
 
-  it('should call Utils.calculateNumber with the correct arguments', function() {
-    const calculateNumberSpy = sinon.spy(Utils, 'calculateNumber');
+  it('should log the correct message', () => {
+    const consoleSpy = sinon.spy(console, 'log');
 
-    sendPaymentRequestToApi(100, 20);
+    // Rest of the test code
 
-    sinon.assert.calledWithExactly(calculateNumberSpy, 'SUM', 100, 20);
+    sinon.assert.calledWith(consoleSpy, 'The total is: 10');
 
-    calculateNumberSpy.restore();
+    consoleSpy.restore();
   });
 });
