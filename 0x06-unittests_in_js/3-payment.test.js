@@ -1,16 +1,16 @@
-// 3-payment.test.js
+const { expect } = require('chai');
+const { it, describe } = require('mocha');
 const sinon = require('sinon');
-const sendPaymentRequestToApi = require('./3-payment');
-const Utils = require('./utils');
 
-describe('sendPaymentRequestToApi', function() {
-  it('should call Utils.calculateNumber with the correct arguments', function() {
-    const calculateNumberSpy = sinon.spy(Utils, 'calculateNumber');
+const Utils = require('./utils.js');
+const sendPaymentRequestToApi = require('./3-payment.js');
 
-    sendPaymentRequestToApi(100, 20);
-
-    sinon.assert.calledWithExactly(calculateNumberSpy, 'SUM', 100, 20);
-
-    calculateNumberSpy.restore();
+describe('', () => {
+  it('checking if numbers round with spies', () => {
+    const checkSoy = sinon.spy(Utils, 'calculateNumber');
+    sendPaymentRequestToApi(1, 3);
+    expect(checkSoy.calledOnce).to.be.true;
+    expect(checkSoy.calledWith('SUM', 1, 3)).to.be.true;
+    checkSoy.restore();
   });
 });
