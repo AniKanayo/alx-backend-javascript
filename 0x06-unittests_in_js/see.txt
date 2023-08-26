@@ -53,6 +53,6 @@ The total is: 20
     ✔ 7 is equal to 7
 
 
-  21 passing (59ms)
+  21 passing (51ms)
   1 pending
 
