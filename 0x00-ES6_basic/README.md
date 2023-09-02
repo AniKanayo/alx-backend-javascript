@@ -82,7 +82,8 @@ File: 0-constants.js
 1. Block Scope
 mandatory
 Score: 88.33% (Checks completed: 100.0%)
-Given what you’ve read about var and hoisting, modify the variables inside the function taskBlock so that the variables aren’t overwritten inside the conditional block.
+Given what you’ve read about var and hoisting, modify the variables in side the
+function taskBlock so that the variables aren’t overwritten inside the conditional block.
 
 export default function taskBlock(trueOrFalse) {
   var task = false;
@@ -267,7 +268,9 @@ console.log(getSanFranciscoDescription());
 
 bob@dylan:~$
 bob@dylan:~$ npm run dev 6-main.js 
-As of 2017, it was the seventh-highest income county in the United States, with a per capita personal income of $119,868. As of 2015, San Francisco proper had a GDP of $154.2 billion, and a GDP per capita of $178,479.
+As of 2017, it was the seventh-highest income county in the United States,
+with a per capita personal income of $119,868. As of 2015, San Francisco proper
+had a GDP of $154.2 billion, and a GDP per capita of $178,479.
 bob@dylan:~$
 Repo:
 
@@ -570,67 +573,3 @@ Repo:
 GitHub repository: alx-backend-javascript
 Directory: 0x00-ES6_basic
 File: 101-iterateThroughObject.js
-    
-Copyright © 2023 ALX, All rights reserved. constant and a variable
-Block-scoped variables
-Arrow functions and function parameters default to them
-Rest and spread function parameters
-String templating in ES6
-Object creation and their properties in ES6
-Iterators and for-of loops
-Requirements
-General
-All your files will be executed on Ubuntu 18.04 LTS using NodeJS 12.11.x
-Allowed editors: vi, vim, emacs, Visual Studio Code
-All your files should end with a new line
-A README.md file, at the root of the folder of the project, is mandatory
-Your code should use the js extension
-Your code will be tested using the Jest Testing Framework
-Your code will be analyzed using the linter ESLint along with specific rules that we'll provide
-All of your functions must be exported
-Setup
-Install NodeJS 12.11.x
-(in your home directory):
-
-curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
-sudo bash nodesource_setup.sh
-sudo apt install nodejs -y
-$ nodejs -v
-v12.11.1
-$ npm -v
-6.11.3
-Install Jest, ppendToEachArrayValue to use ES6's for...of operator. And don't forget that var is not ES6-friendly.
-
-export default function appendToEachArrayValue(array, appendString) {
-  for (var idx in array) {
-    var value = array[idx];
-    array[idx] = appendString + value;
-  }
-
-  return array;
-}
-Execution:
-
-bob@dylan:~$ cat 10-main.js
-import appendToEachArrayValue from './10-loops.js';
-
-console.log(appendToEachArrayValue(['appended', 'fixed', 'displayed'], 'correctly-'));
-
-bob@dylan:~$
-bob@dylan:~$ npm run dev 10-main.js 
-[ 'correctly-appended', 'correctly-fixed', 'correctly-displayed' ]
-bob@dylan:~$
-Repo:
-
-GitHub repository: alx-backend-javascript
-Directory: 0x00-ES6_basic
-File: 10-loops.js
-    
-11. Iterator
-mandatory
-Score: 100.0% (Checks completed: 100.0%)
-Write a function named createEmployeesObject that will receive two arguments:
-
-departmentName (String)
-employees (Array of Strings)
-export default function createEmployee
